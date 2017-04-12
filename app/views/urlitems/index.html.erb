@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Urlitems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Rawurl</th>
+      <th>Preservedate</th>
+      <th>Unread</th>
+      <th>Archive</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @urlitems.each do |urlitem| %>
+      <tr>
+        <td><%= urlitem.user_id %></td>
+        <td><%= urlitem.rawurl %></td>
+        <td><%= urlitem.preserveDate %></td>
+        <td><%= urlitem.unread %></td>
+        <td><%= urlitem.archive %></td>
+        <td><%= link_to 'Show', urlitem %></td>
+        <td><%= link_to 'Edit', edit_urlitem_path(urlitem) %></td>
+        <td><%= link_to 'Destroy', urlitem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Urlitem', new_urlitem_path %>

@@ -1,0 +1,2 @@
+class Urlitem < ApplicationRecord
+end

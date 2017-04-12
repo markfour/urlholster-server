@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @urlitem.user_id %>
+</p>
+
+<p>
+  <strong>Rawurl:</strong>
+  <%= @urlitem.rawurl %>
+</p>
+
+<p>
+  <strong>Preservedate:</strong>
+  <%= @urlitem.preserveDate %>
+</p>
+
+<p>
+  <strong>Unread:</strong>
+  <%= @urlitem.unread %>
+</p>
+
+<p>
+  <strong>Archive:</strong>
+  <%= @urlitem.archive %>
+</p>
+
+<%= link_to 'Edit', edit_urlitem_path(@urlitem) %> |
+<%= link_to 'Back', urlitems_path %>
