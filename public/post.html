@@ -10,8 +10,11 @@
 
 <form method="post" action="/urlitems">
   <p>
-  ID <input type="number" name="user_id" value="1"/><br />
-  URL：<input type="text" name="rawurl" value="http://www.rubylife.jp/"/><br />
+  ID <input type="number" name="urlitem[user_id]" value="1"/><br />
+  URL：<input type="text" name="urlitem[rawurl]" value="http://www.rubylife.jp/"/><br />
+  preserveDate <input type="date" name="urlitem[preserveDate]" value="2017-04-13"/><br />
+  unread <input type="checkbox" name="urlitem[unread]" value="false"/><br />
+  archive <input type="checkbox" name="urlitem[archive]" value="false"/><br />
  <input type="submit" value="送信" />
  </p>
 </form>
