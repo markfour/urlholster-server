@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170412082924) do
+ActiveRecord::Schema.define(version: 20170413082002) do
 
   create_table "urlitems", force: :cascade do |t|
     t.integer  "user_id"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20170412082924) do
     t.boolean  "archive"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.string   "web_title"
   end
 
   create_table "users", force: :cascade do |t|
