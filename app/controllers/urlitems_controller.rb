@@ -69,6 +69,6 @@ class UrlitemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def urlitem_params
-      params.require(:urlitem).permit(:user_id, :rawurl, :preserveDate, :unread, :archive)
+      params.require(:urlitem).permit(:user_id, :rawurl, :web_title, :preserveDate, :unread, :archive)
     end
 end

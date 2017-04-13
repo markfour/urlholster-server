@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>User</th>
+      <th>Web_title</th>
       <th>Rawurl</th>
       <th>Preservedate</th>
       <th>Unread</th>
@@ -18,6 +19,7 @@
     <% @urlitems.each do |urlitem| %>
       <tr>
         <td><%= urlitem.user_id %></td>
+        <td><%= urlitem.web_title %></td>
         <td><%= urlitem.rawurl %></td>
         <td><%= urlitem.preserveDate %></td>
         <td><%= urlitem.unread %></td>
